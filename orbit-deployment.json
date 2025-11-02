@@ -1,0 +1,15 @@
+{
+  "chainId": 123456789,
+  "chainName": "StableLedger AnyTrust Chain",
+  "parentChain": "sepolia",
+  "gasToken": {
+    "address": null,
+    "symbol": "MUSDC",
+    "decimals": 18
+  },
+  "contracts": {},
+  "deployment": {
+    "deployer": "0xE0335EdD8092a999483FB6AADd1b443a8112C710",
+    "timestamp": "2025-11-02T09:43:35.564Z"
+  }
+}

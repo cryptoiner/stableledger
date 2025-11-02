@@ -1,0 +1,28 @@
+{
+  "name": "stableledger",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run node\" \"npm run dapp\" --names \"NODE,DAPP\" --prefix-colors \"cyan,magenta\"",
+    "node": "chmod +x start-anytrust-node.sh && ./start-anytrust-node.sh",
+    "dapp": "cd bridge-dapp && npm run dev",
+    "stop": "docker stop stableledger-anytrust 2>/dev/null || true",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@arbitrum/orbit-sdk": "^0.24.2",
+    "@arbitrum/sdk": "^4.0.4",
+    "dotenv": "^17.2.3",
+    "ethers": "^5.8.0",
+    "solc": "^0.8.20",
+    "viem": "^1.21.4"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}

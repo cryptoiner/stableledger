@@ -1,0 +1,86 @@
+{
+  "chain": {
+    "info-json": "{\"chain-id\":123456791,\"parent-chain-id\":421614,\"parent-chain-is-arbitrum\":true,\"chain-name\":\"StableLedger AnyTrust Chain (USDC)\",\"chain-config\":{\"chainId\":123456791,\"homesteadBlock\":0,\"daoForkBlock\":null,\"daoForkSupport\":true,\"eip150Block\":0,\"eip150Hash\":\"0x0000000000000000000000000000000000000000000000000000000000000000\",\"eip155Block\":0,\"eip158Block\":0,\"byzantiumBlock\":0,\"constantinopleBlock\":0,\"petersburgBlock\":0,\"istanbulBlock\":0,\"muirGlacierBlock\":0,\"berlinBlock\":0,\"londonBlock\":0,\"clique\":{\"period\":0,\"epoch\":0},\"arbitrum\":{\"EnableArbOS\":true,\"AllowDebugPrecompiles\":false,\"DataAvailabilityCommittee\":true,\"InitialArbOSVersion\":20,\"InitialChainOwner\":\"0xE0335EdD8092a999483FB6AADd1b443a8112C710\",\"GenesisBlockNum\":0,\"CustomGasToken\":\"0xd220a5494fa26b586fce7364cf895db466802b29\"}},\"rollup\":{\"bridge\":\"0x99b2f69d35c0e99ce07965129182c35e60b2c337\",\"inbox\":\"0x71e0f675ea9236046a155e050e91f339988091b2\",\"sequencer-inbox\":\"0x290ae024c02daf0ddb9df3104640c2dcf09295ee\",\"rollup\":\"0xf18646d3636c866a7ca54721416af24fd06f5434\",\"validator-utils\":\"0x38e99ec16c6a4c55b319eafef01ae84fce91d8af\",\"deployed-at\":0}}",
+    "name": "StableLedger AnyTrust Chain (USDC)"
+  },
+  "parent-chain": {
+    "connection": {
+      "url": "https://arb-sepolia.g.alchemy.com/v2/L_UFxv9iBuUPX2QCzXSOjEpHyaN4BCVy"
+    }
+  },
+  "http": {
+    "addr": "0.0.0.0",
+    "port": 8547,
+    "vhosts": "*",
+    "corsdomain": "*",
+    "api": [
+      "eth",
+      "net",
+      "web3",
+      "arb",
+      "debug"
+    ]
+  },
+  "ws": {
+    "addr": "0.0.0.0",
+    "port": 8548,
+    "origins": "*",
+    "api": [
+      "eth",
+      "net",
+      "web3",
+      "arb",
+      "debug"
+    ]
+  },
+  "node": {
+    "sequencer": {
+      "enable": true,
+      "dangerous": {
+        "no-coordinator": true
+      },
+      "max-tx-data-size": 85000
+    },
+    "staker": {
+      "enable": true,
+      "strategy": "MakeNodes",
+      "staker-interval": "10s"
+    },
+    "caching": {
+      "archive": false,
+      "block-count": 128,
+      "block-age": "30m",
+      "trie-time-limit": "5m",
+      "trie-dirty-cache-size": 1024,
+      "trie-clean-cache-size": 600,
+      "snapshot-cache-size": 400,
+      "database-cache-size": 2048,
+      "trie-clean-journal": "triecache",
+      "trie-clean-rejournal": "1h"
+    },
+    "data-availability": {
+      "enable": true,
+      "rest-aggregator": {
+        "enable": true,
+        "urls": [
+          "http://localhost:9877"
+        ]
+      }
+    }
+  },
+  "execution": {
+    "forwarding-target": "",
+    "sequencer": {
+      "enable": true,
+      "max-acceptable-timestamp-delta": "1h"
+    },
+    "caching": {
+      "state-scheme": "hash"
+    }
+  },
+  "validation": {
+    "wasm": {
+      "allowed-wasm-module-roots": []
+    }
+  }
+}

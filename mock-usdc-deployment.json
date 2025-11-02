@@ -1,0 +1,12 @@
+{
+  "address": "0x0000000000000000000000000000000000000000",
+  "txHash": "placeholder",
+  "gasUsed": 0,
+  "name": "Mock USDC",
+  "symbol": "MUSDC",
+  "decimals": 18,
+  "deployedAt": "2025-11-02T09:53:28.145Z",
+  "network": "arbitrum-sepolia",
+  "type": "placeholder",
+  "note": "USDC deployment needs to be completed separately - proceeding with ETH for now"
+}

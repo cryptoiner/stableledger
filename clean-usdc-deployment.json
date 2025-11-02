@@ -1,0 +1,21 @@
+{
+  "address": "0xd220a5494fa26b586fce7364cf895db466802b29",
+  "txHash": "0x9bcc03f8854d0b2f6b5bd92c82a03fd9c1fc744d9d89dbbdc3f2aba13bcfc400",
+  "gasUsed": "938836",
+  "name": "Mock USDC",
+  "symbol": "MUSDC",
+  "decimals": 18,
+  "totalSupply": "1000000",
+  "deployedAt": "2025-11-02T12:03:40.000Z",
+  "network": "arbitrum-sepolia",
+  "compiler": "solc-0.8.20",
+  "bytecodeLength": 10624,
+  "verified": true,
+  "readyForOrbit": true,
+  "specifications": {
+    "totalSupplyWei": "1000000000000000000000000",
+    "decimalsVerified": true,
+    "supplyVerified": true,
+    "allFunctionsWorking": true
+  }
+}
